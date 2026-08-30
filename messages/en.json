@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "siteName": "Digital Assets",
+    "title": "An AI system that posts short videos automatically",
+    "description": "It generates the idea, builds the video, writes the caption and hashtags, and publishes on schedule."
+  },
+  "common": {
+    "currency": "EGP",
+    "localeName": "English",
+    "switchTo": "العربية"
+  }
+}

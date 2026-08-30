@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "siteName": "Digital Assets",
+    "title": "نظام AI لنشر فيديوهات قصيرة أوتوماتيك",
+    "description": "نظام بيولد الفكرة، يجهز الفيديو، يكتب الكابشن والهاشتاجات، وينشر أوتوماتيك."
+  },
+  "common": {
+    "currency": "ج.م",
+    "localeName": "العربية",
+    "switchTo": "English"
+  }
+}
