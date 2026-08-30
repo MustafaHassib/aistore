@@ -10,7 +10,7 @@ export function Hero() {
   const chips = t.raw("chips") as string[];
 
   return (
-    <section id="hero" className="bg-bg">
+    <section id="hero" aria-labelledby="hero-heading" className="bg-bg">
       <div className="mx-auto grid max-w-page items-center gap-12 px-5 py-14 md:py-20 lg:grid-cols-[1.15fr_1fr]">
         <div>
           <ul className="flex flex-wrap gap-2">
@@ -26,7 +26,10 @@ export function Hero() {
 
           <p className="mt-6 text-sm font-semibold text-accent">{t("kicker")}</p>
 
-          <h1 className="mt-3 text-4xl font-bold leading-[1.25] tracking-tight md:text-5xl">
+          <h1
+            id="hero-heading"
+            className="mt-3 text-4xl font-bold leading-[1.25] tracking-tight md:text-5xl"
+          >
             {t("headlineBefore")} <Highlight>{t("headlineHighlight")}</Highlight>{" "}
             {t("headlineAfter")}
           </h1>

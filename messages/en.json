@@ -45,6 +45,285 @@
     "trust": "Instant delivery • One-time payment • Lifetime access",
     "coverAsset": "Hero cover image"
   },
+  "proofResults": {
+    "eyebrow": "🔥 Proof before claims",
+    "heading": "See the results first — then judge the system",
+    "sub": "Before we explain how it works, look at the kind of reach consistent content can open up.",
+    "items": [
+      {
+        "kind": "image",
+        "label": "Channel results screenshot 1",
+        "ratio": "9/16",
+        "title": "Channel results",
+        "badge": "[your figure]",
+        "caption": "Replace this with a screenshot of your own results."
+      },
+      {
+        "kind": "image",
+        "label": "Channel results screenshot 2",
+        "ratio": "9/16",
+        "title": "Channel results",
+        "badge": "[your figure]",
+        "caption": "Replace this with a screenshot of your own results."
+      },
+      {
+        "kind": "image",
+        "label": "Channel results screenshot 3",
+        "ratio": "9/16",
+        "title": "Channel results",
+        "badge": "[your figure]",
+        "caption": "Replace this with a screenshot of your own results."
+      }
+    ]
+  },
+  "proofPlatforms": {
+    "eyebrow": "▶️ More than one platform",
+    "heading": "Not just TikTok — short content works across platforms",
+    "sub": "The same short-form idea can run on YouTube Shorts, Reels, and TikTok, which opens more chances than leaning on a single platform.",
+    "items": [
+      {
+        "kind": "image",
+        "label": "TikTok results screenshot",
+        "ratio": "4/3",
+        "title": "TikTok",
+        "caption": "Replace this with a screenshot from your account."
+      },
+      {
+        "kind": "image",
+        "label": "YouTube Shorts results screenshot",
+        "ratio": "4/3",
+        "title": "YouTube Shorts",
+        "caption": "Replace this with a screenshot from your channel."
+      },
+      {
+        "kind": "image",
+        "label": "Instagram Reels results screenshot",
+        "ratio": "4/3",
+        "title": "Instagram Reels",
+        "caption": "Replace this with a screenshot from your account."
+      }
+    ]
+  },
+  "painPoints": {
+    "eyebrow": "😔 The reality of most days",
+    "heading": "You are not lazy — daily content really is draining",
+    "sub": "Keeping up the posting is the hard part. Not the design, not the filming, not the ideas.",
+    "items": [
+      {
+        "icon": "🧠",
+        "title": "Deciding what to post drains you",
+        "desc": "Every day starts from zero, and the doing alone takes hours."
+      },
+      {
+        "icon": "📱",
+        "title": "One quiet day breaks the momentum",
+        "desc": "The algorithm rewards regularity, and stopping costs you reach."
+      },
+      {
+        "icon": "⏰",
+        "title": "Life does not pause so you can post",
+        "desc": "Work, family, commitments — and social still wants something daily."
+      },
+      {
+        "icon": "💔",
+        "title": "Effort does not always convert",
+        "desc": "Two hours on a single video that may reach almost nobody."
+      }
+    ]
+  },
+  "demo": {
+    "eyebrow": "▶ Inside the system",
+    "heading": "From idea to published in minutes",
+    "sub": "The video is generated, the caption written, the hashtags produced, and the post scheduled.",
+    "items": [
+      {
+        "kind": "video",
+        "label": "System walkthrough video",
+        "ratio": "16/9",
+        "title": "See the system from the inside"
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "⚙️ How it works",
+    "heading": "You say \"start\" — the system carries the rest",
+    "items": [
+      {
+        "icon": "💡",
+        "title": "Generates the idea",
+        "desc": "30+ distinct scenarios with no repetition."
+      },
+      {
+        "icon": "🎬",
+        "title": "Builds the video",
+        "desc": "Short AI videos sized for the platforms."
+      },
+      {
+        "icon": "✍️",
+        "title": "Writes the title",
+        "desc": "Hooks that hold a viewer from the first second."
+      },
+      {
+        "icon": "📝",
+        "title": "Writes the caption",
+        "desc": "A caption suited to each platform, with no writing from you."
+      },
+      {
+        "icon": "#️⃣",
+        "title": "Generates hashtags",
+        "desc": "Relevant hashtags to widen reach."
+      },
+      {
+        "icon": "📤",
+        "title": "Publishes on schedule",
+        "desc": "Posting happens automatically, even while you sleep."
+      }
+    ]
+  },
+  "sampleVideos": {
+    "eyebrow": "🎬 Made with the system",
+    "heading": "Examples of the output the system produces",
+    "sub": "These show the shape of the output. They are not a promise of any particular result.",
+    "items": [
+      {
+        "kind": "video",
+        "label": "Sample video — style one",
+        "ratio": "9/16",
+        "title": "Content style 1",
+        "badge": "[your figure]"
+      },
+      {
+        "kind": "video",
+        "label": "Sample video — style two",
+        "ratio": "9/16",
+        "title": "Content style 2",
+        "badge": "[your figure]"
+      },
+      {
+        "kind": "video",
+        "label": "Sample video — style three",
+        "ratio": "9/16",
+        "title": "Content style 3",
+        "badge": "[your figure]"
+      }
+    ]
+  },
+  "objections": {
+    "eyebrow": "✅ Is it for you",
+    "heading": "Before you ask — the three biggest worries",
+    "items": [
+      {
+        "icon": "📱",
+        "title": "Does it work from a phone?",
+        "desc": "Yes. The system runs in the cloud, and an ordinary phone is enough to run and monitor it.",
+        "note": "✓ A phone is enough"
+      },
+      {
+        "icon": "💻",
+        "title": "Do I need a powerful computer?",
+        "desc": "No. The processing does not happen on your machine, so no strong laptop or graphics card is needed.",
+        "note": "✓ No powerful hardware"
+      },
+      {
+        "icon": "🧠",
+        "title": "Do I need AI experience?",
+        "desc": "No. The walkthrough starts from zero, and the system handles the bulk of the work automatically.",
+        "note": "✓ Beginner friendly"
+      }
+    ]
+  },
+  "reviews": {
+    "eyebrow": "⭐ Reviews and experiences",
+    "heading": "People who bought it and saw the system from the inside",
+    "sub": "Add genuine reviews from actual buyers here — with their permission.",
+    "items": [
+      {
+        "kind": "image",
+        "label": "Buyer review 1",
+        "ratio": "9/16",
+        "title": "Buyer review"
+      },
+      {
+        "kind": "image",
+        "label": "Buyer review 2",
+        "ratio": "9/16",
+        "title": "Buyer review"
+      },
+      {
+        "kind": "video",
+        "label": "Buyer video review",
+        "ratio": "9/16",
+        "title": "Video review"
+      }
+    ]
+  },
+  "proofTikTok": {
+    "eyebrow": "💸 Turning views into income",
+    "heading": "Content is not only for watching — it can become income",
+    "sub": "Add genuine screenshots from your own dashboards here. Results vary between people and nothing is guaranteed.",
+    "items": [
+      {
+        "icon": "💰",
+        "title": "Creator Rewards",
+        "desc": "Replace this with a screenshot of your own earnings dashboard."
+      },
+      {
+        "icon": "📊",
+        "title": "Estimated Revenue",
+        "desc": "Replace this with a screenshot of your revenue reports."
+      },
+      {
+        "icon": "🏦",
+        "title": "Creator Fund",
+        "desc": "Replace this with a screenshot of your payouts."
+      }
+    ]
+  },
+  "proofViews": {
+    "eyebrow": "📈 Reach and views",
+    "heading": "It is not about one video — it is about publishing continuously",
+    "sub": "Every new video is another chance at reach. The system exists to help you keep publishing.",
+    "items": [
+      {
+        "icon": "▶️",
+        "title": "Shorts views",
+        "desc": "Replace this with a screenshot from your channel analytics."
+      },
+      {
+        "icon": "📡",
+        "title": "Wider reach",
+        "desc": "Posting daily gives you more chances to test more angles."
+      },
+      {
+        "icon": "🔁",
+        "title": "Repeatable results",
+        "desc": "Any strong result can become an entire content series."
+      }
+    ]
+  },
+  "proofAffiliate": {
+    "eyebrow": "💰 Additional income streams",
+    "heading": "Views can open the door to affiliate and commissions",
+    "sub": "Once content is running consistently, you can connect it to offers, services, or digital products.",
+    "items": [
+      {
+        "icon": "🔗",
+        "title": "Affiliate results",
+        "desc": "Replace this with a screenshot of your own commissions dashboard."
+      },
+      {
+        "icon": "🧾",
+        "title": "Actual commissions",
+        "desc": "Regular content opens more than one potential income stream."
+      }
+    ]
+  },
+  "order": {
+    "eyebrow": "🧾 Order now",
+    "heading": "Get the system and start today",
+    "sub": "Once your payment is confirmed, everything is delivered instantly via Google Drive.",
+    "placeholder": "The order form is being set up."
+  },
   "finalCta": {
     "heading": "Every day you wait is videos, views, and chances going unused",
     "sub": "Start with a system that shortens the thinking, design, editing, and publishing — and put your attention on growth instead.",

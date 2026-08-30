@@ -1,6 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
-import { Hero } from "@/components/sections/Hero";
-import { HeroStats } from "@/components/sections/HeroStats";
+import { SectionRenderer } from "@/components/sections/SectionRenderer";
 
 export default async function LandingPage({
   params,
@@ -12,8 +11,7 @@ export default async function LandingPage({
 
   return (
     <main>
-      <Hero />
-      <HeroStats />
+      <SectionRenderer />
     </main>
   );
 }
