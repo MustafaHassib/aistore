@@ -29,7 +29,7 @@ export function Placeholder({
         🖼
       </span>
       <span className="text-xs font-semibold text-ink-3">Replace: {label}</span>
-      <span className="text-[10px] uppercase tracking-wider text-ink-3 opacity-70">
+      <span className="text-[10px] uppercase tracking-wider text-ink-3">
         {ratio}
       </span>
     </div>

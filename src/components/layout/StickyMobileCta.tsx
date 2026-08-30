@@ -57,7 +57,10 @@ export function StickyMobileCta() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t-[1.5px] border-line-strong bg-surface p-3 md:hidden">
+    <div
+      data-testid="sticky-cta"
+      className="fixed inset-x-0 bottom-0 z-40 border-t-[1.5px] border-line-strong bg-surface p-3 md:hidden"
+    >
       <Button as="a" href="#order" size="md" className="w-full">
         {t("label", { price: formatMoney(PRICING.main, locale, tc("currency")) })}
       </Button>
