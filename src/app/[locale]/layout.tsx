@@ -6,6 +6,7 @@ import { IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { directionOf, type Locale } from "@/lib/types";
 import { CountdownTopbar } from "@/components/layout/CountdownTopbar";
+import { ExitIntent } from "@/components/layout/ExitIntent";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { StickyMobileCta } from "@/components/layout/StickyMobileCta";
 import "../globals.css";
@@ -69,6 +70,7 @@ export default async function LocaleLayout({
           {children}
           <SiteFooter />
           <StickyMobileCta />
+          <ExitIntent />
         </NextIntlClientProvider>
       </body>
     </html>

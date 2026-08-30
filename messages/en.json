@@ -45,6 +45,31 @@
     "trust": "Instant delivery • One-time payment • Lifetime access",
     "coverAsset": "Hero cover image"
   },
+  "finalCta": {
+    "heading": "Every day you wait is videos, views, and chances going unused",
+    "sub": "Start with a system that shortens the thinking, design, editing, and publishing — and put your attention on growth instead.",
+    "cta": "Start the video factory now — {price}",
+    "trust": "Instant delivery • Lifetime access • Direct support"
+  },
+  "exitIntent": {
+    "close": "Close",
+    "stages": [
+      {
+        "eyebrow": "⚡ Special offer for this session",
+        "heading": "Take the system at {percent}% off",
+        "sub": "This price is available only while this page stays open.",
+        "cta": "Buy now for {price}",
+        "dismiss": "No thanks, I'll pass"
+      },
+      {
+        "eyebrow": "⚡ One moment before you go",
+        "heading": "Still unsure? Try the system first",
+        "sub": "Take the smaller Mini version and test the idea yourself before committing to the full one.",
+        "cta": "Try the Mini version for {price}",
+        "dismiss": "No thanks, maybe later"
+      }
+    ]
+  },
   "faq": {
     "eyebrow": "❓ Common questions",
     "heading": "Before you ask — the answers are here",
