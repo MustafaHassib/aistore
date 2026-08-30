@@ -45,6 +45,69 @@
     "trust": "Instant delivery • One-time payment • Lifetime access",
     "coverAsset": "Hero cover image"
   },
+  "faq": {
+    "eyebrow": "❓ Common questions",
+    "heading": "Before you ask — the answers are here",
+    "sub": "The questions most likely to stop you before ordering, answered plainly.",
+    "items": [
+      {
+        "q": "What exactly am I buying?",
+        "a": "An AI automation system for producing short videos and publishing them regularly, together with a setup walkthrough and bonuses to help you start."
+      },
+      {
+        "q": "What does the system do on its own?",
+        "a": "It helps generate the idea, prepare the video content, write the title, caption and hashtags, and organise publishing according to your settings."
+      },
+      {
+        "q": "Do the videos come out ready to publish?",
+        "a": "Yes — the goal is short videos ready for TikTok, Reels, and Shorts, which you can still review or edit before they go out."
+      },
+      {
+        "q": "Can I use it from my phone?",
+        "a": "Yes. The system runs in the cloud, so a normal phone is enough to operate and monitor it."
+      },
+      {
+        "q": "Do I need a powerful computer?",
+        "a": "No. The heavy processing does not depend on your hardware, so no expensive machine or graphics card is required."
+      },
+      {
+        "q": "Do I need experience with AI or video editing?",
+        "a": "No. The walkthrough is written for a complete beginner, step by step, with no technical background assumed."
+      },
+      {
+        "q": "Do I have to show my face or film myself?",
+        "a": "No. The system is built for faceless content — no personal filming and no on-camera appearance."
+      },
+      {
+        "q": "Can I work across more than one platform?",
+        "a": "Yes. The same short-form content can be used on TikTok, Instagram Reels, and YouTube Shorts depending on your plan and accounts."
+      },
+      {
+        "q": "Are earnings guaranteed?",
+        "a": "No. There is no guarantee of any income. Results depend on consistency, niche, how you use the system, and factors outside it entirely."
+      },
+      {
+        "q": "What if I am a complete beginner?",
+        "a": "It suits you, because it includes the setup walkthrough, a Quick Start, and a content plan to get you moving from zero."
+      },
+      {
+        "q": "Is there a monthly subscription?",
+        "a": "No. It is a one-time payment with no recurring subscription."
+      },
+      {
+        "q": "Is there support after purchase?",
+        "a": "Yes, direct technical support is available to help you understand the setup and resolve basic problems."
+      },
+      {
+        "q": "How is this different from making videos manually?",
+        "a": "Doing it by hand costs time and effort every single day. The system shortens the thinking, preparation, and publishing steps so you can keep going."
+      },
+      {
+        "q": "Is there a plan to follow after I buy?",
+        "a": "Yes. The bonuses include a 30-Day Auto Content Plan and the AI Page Launch Kit so your first month has clear steps."
+      }
+    ]
+  },
   "offer": {
     "eyebrow": "🔥 The full offer",
     "heading": "Everything you need to get started",
