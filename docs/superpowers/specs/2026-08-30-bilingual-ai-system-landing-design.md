@@ -221,29 +221,47 @@ component code.
 Rendered from `config/sections.ts` in this order. Reordering, removing, or duplicating a
 section is a one-line edit to that array.
 
-| # | Component | Type | Notes |
+**Sections are composed from a small set of primitives, not written one file per section.**
+Most of the reference's sections are the same shape — eyebrow, heading, sub-copy, then a grid
+of cards or media. Writing 21 near-identical components would be duplication that has to be
+maintained 21 times. Instead:
+
+| Primitive | Serves |
+|---|---|
+| `SectionShell` | Every section: eyebrow, heading with marker highlight, sub-copy, band variant |
+| `CardGrid` | PainPoints, HowItWorks, TopObjections, ProofTikTok, ProofViews, ProofAffiliate |
+| `MediaGrid` | ProofResults, ProofPlatforms, SampleVideos, Reviews |
+| `BeforeAfter` | The ❌ / ✅ column pair |
+| `OfferStack` | The 13-item priced stack and price reveal |
+| `Faq` | The Q&A accordion |
+| `Hero`, `HeroStats`, `FinalCta` | One-off layouts |
+
+`config/sections.ts` maps each section id to a primitive, a message namespace, and a band
+variant. Adding a section is a manifest entry plus a message namespace — no new component.
+
+| # | Section id | Primitive | Notes |
 |---|---|---|---|
-| 1 | `CountdownTopbar` | interactive | Sticky. Evergreen deadline |
-| 2 | `Hero` | interactive | Pain bullets, headline, chips, CTA, trust row |
-| 3 | `HeroStats` | interactive | 4 count-up figures |
-| 4 | `ProofResults` | static | Results grid + framing copy |
-| 5 | `ProofPlatforms` | static | Multi-platform reach |
-| 6 | `PainPoints` | static | 4 cards |
-| 7 | `BeforeAfter` | static | ❌ / ✅ column pair |
-| 8 | `DemoVideo` | interactive | Poster, click-to-play |
-| 9 | `HowItWorks` | static | 6 steps |
-| 10 | `SampleVideos` | interactive | 3 `VideoCard`s |
-| 11 | `TopObjections` | static | 3 cards |
-| 12 | `Reviews` | interactive | Review images + video reviews |
-| 13 | `ProofTikTok` | static | Earnings screenshots |
-| 14 | `ProofViews` | static | Views screenshots |
-| 15 | `ProofAffiliate` | static | Commission screenshots |
-| 16 | `OfferStack` | static | 13 line items with prices, then reveal |
-| 17 | `OrderSection` | interactive | Summary + `OrderForm` |
-| 18 | `Faq` | interactive | 14 Q&A |
-| 19 | `FinalCta` | static | Urgency close |
-| 20 | `SiteFooter` | static | Copyright + delivery disclaimer |
-| 21 | `ExitIntent` | interactive | Two-stage popup |
+| 1 | `topbar` | `CountdownTopbar` | Sticky, layout-level. Evergreen deadline |
+| 2 | `hero` | `Hero` | Pain bullets, headline, chips, CTA, trust row |
+| 3 | `heroStats` | `HeroStats` | 4 count-up figures |
+| 4 | `proofResults` | `MediaGrid` | Results grid + framing copy |
+| 5 | `proofPlatforms` | `MediaGrid` | Multi-platform reach |
+| 6 | `painPoints` | `CardGrid` | 4 cards |
+| 7 | `beforeAfter` | `BeforeAfter` | ❌ / ✅ column pair |
+| 8 | `demo` | `MediaGrid` | Single video, poster, click-to-play |
+| 9 | `howItWorks` | `CardGrid` | 6 numbered steps |
+| 10 | `sampleVideos` | `MediaGrid` | 3 video cards |
+| 11 | `objections` | `CardGrid` | 3 cards |
+| 12 | `reviews` | `MediaGrid` | Review images + video reviews |
+| 13 | `proofTikTok` | `CardGrid` | Earnings screenshots |
+| 14 | `proofViews` | `CardGrid` | Views screenshots |
+| 15 | `proofAffiliate` | `CardGrid` | Commission screenshots |
+| 16 | `offer` | `OfferStack` | 13 line items with prices, then reveal |
+| 17 | `order` | `OrderSection` | Summary + `OrderForm` (Plan B) |
+| 18 | `faq` | `Faq` | 14 Q&A |
+| 19 | `finalCta` | `FinalCta` | Urgency close |
+| 20 | `footer` | `SiteFooter` | Layout-level. Copyright + delivery disclaimer |
+| 21 | `exitIntent` | `ExitIntent` | Layout-level. Two-stage popup |
 
 ### Interactive behaviour
 
