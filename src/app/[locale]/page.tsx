@@ -1,4 +1,6 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
+import { Hero } from "@/components/sections/Hero";
+import { HeroStats } from "@/components/sections/HeroStats";
 
 export default async function LandingPage({
   params,
@@ -8,11 +10,10 @@ export default async function LandingPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations("meta");
-
   return (
-    <main className="mx-auto max-w-page px-6 py-24">
-      <h1 className="text-4xl font-bold">{t("title")}</h1>
+    <main>
+      <Hero />
+      <HeroStats />
     </main>
   );
 }

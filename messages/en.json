@@ -23,5 +23,35 @@
   },
   "stickyCta": {
     "label": "Start now — {price}"
+  },
+  "hero": {
+    "pains": [
+      "😩 You wake up and forget to post",
+      "📉 Your page has been quiet for months",
+      "🕐 Hours per video with no guarantee"
+    ],
+    "kicker": "Struggling to post consistently? You are not alone.",
+    "headlineBefore": "An AI system that posts",
+    "headlineHighlight": "viral short videos",
+    "headlineAfter": "on its own, every day",
+    "sub": "It writes the idea, builds the video, writes the caption and hashtags, and publishes to social — while you sleep, work, or travel.",
+    "chips": [
+      "🎬 5 videos a day",
+      "🤖 100% automated",
+      "📱 Runs from your phone",
+      "💸 No filming, no face"
+    ],
+    "cta": "Start the video factory today",
+    "trust": "Instant delivery • One-time payment • Lifetime access",
+    "coverAsset": "Hero cover image"
+  },
+  "heroStats": {
+    "label": "Key figures",
+    "items": [
+      { "value": 5, "label": "videos published daily" },
+      { "value": 30, "suffix": "+", "label": "distinct scenarios, no repeats" },
+      { "value": 1, "suffix": " hour", "label": "one-time setup" },
+      { "value": 1500, "suffix": "+", "label": "buyers running the system" }
+    ]
   }
 }
