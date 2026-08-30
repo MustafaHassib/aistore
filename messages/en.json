@@ -45,6 +45,98 @@
     "trust": "Instant delivery • One-time payment • Lifetime access",
     "coverAsset": "Hero cover image"
   },
+  "offer": {
+    "eyebrow": "🔥 The full offer",
+    "heading": "Everything you need to get started",
+    "sub": "Pay once — delivered instantly — yours for life — no monthly subscription.",
+    "ongoing": "Ongoing",
+    "totalLabel": "Total value",
+    "wasLabel": "Original price",
+    "nowLabel": "Price after discount",
+    "savingsLabel": "{percent}% off applied",
+    "cta": "Start now and get the full system",
+    "trust": "Instant delivery • Secure payment • Lifetime access • No subscription",
+    "items": [
+      {
+        "icon": "✅",
+        "title": "The core automation system",
+        "desc": "Generates ideas, builds AI videos, writes captions and hashtags, and publishes automatically.",
+        "price": 1500
+      },
+      {
+        "icon": "▶️",
+        "title": "Step-by-step setup walkthrough",
+        "desc": "A beginner-friendly guide from first opening the system to publishing your first videos.",
+        "price": 750
+      },
+      {
+        "icon": "🎁",
+        "title": "AI Page Launch Kit",
+        "desc": "Build a page from scratch: name, bio, profile image, and first content ideas.",
+        "price": 750
+      },
+      {
+        "icon": "🎁",
+        "title": "Niche Profit Map",
+        "desc": "How to pick and test the right niche instead of starting at random.",
+        "price": 500
+      },
+      {
+        "icon": "🎁",
+        "title": "30-Day Auto Content Plan",
+        "desc": "A month of content planned out, so you always know what goes up today.",
+        "price": 800
+      },
+      {
+        "icon": "🎁",
+        "title": "Viral Hooks Bank",
+        "desc": "50+ ready-made hooks that hold a viewer from the first second.",
+        "price": 400
+      },
+      {
+        "icon": "🎁",
+        "title": "Views to Money Playbook",
+        "desc": "Ways to turn views into affiliate income, services, or digital products.",
+        "price": 600
+      },
+      {
+        "icon": "🎁",
+        "title": "Winning Videos Tracker",
+        "desc": "A tracking sheet so you can spot what worked and repeat it deliberately.",
+        "price": 300
+      },
+      {
+        "icon": "🎁",
+        "title": "Quick Start Video + Checklist",
+        "desc": "A short setup video and a checklist so no step gets missed.",
+        "price": 350
+      },
+      {
+        "icon": "🎁",
+        "title": "Troubleshooting Mini Guide",
+        "desc": "Fixes for the most common setup, connection, and publishing problems.",
+        "price": 250
+      },
+      {
+        "icon": "🎁",
+        "title": "AI Service Resell Guide",
+        "desc": "How to sell AI video services to businesses, with ready outreach and packages.",
+        "price": 600
+      },
+      {
+        "icon": "👥",
+        "title": "AI content creators community",
+        "desc": "Ideas, updates, and shared experience to keep you going after purchase.",
+        "price": null
+      },
+      {
+        "icon": "🛠️",
+        "title": "Direct technical support",
+        "desc": "Post-purchase help so you can understand the system and start with confidence.",
+        "price": null
+      }
+    ]
+  },
   "beforeAfter": {
     "eyebrow": "✨ The fix",
     "heading": "From a page that stalls — to one that runs while you sleep",
