@@ -73,15 +73,20 @@ Declared once in `src/app/globals.css` and exposed to Tailwind via `@theme`.
 | `--surface-2` | `#F3EEE6` | Alternating section bands |
 | `--ink` | `#1C1917` | Headings |
 | `--ink-2` | `#57534E` | Body text |
-| `--ink-3` | `#8A817A` | Muted / captions |
+| `--ink-3` | `#726A63` | Muted / captions |
 | `--line` | `#E4DED4` | Hairlines |
 | `--line-strong` | `#1C1917` | Card borders (1.5px) |
-| `--accent` | `#DC4A1E` | CTAs, emphasis |
+| `--accent` | `#B83A12` | CTAs, emphasis |
 | `--accent-soft` | `#FEE9DC` | Eyebrow pills, tints |
 | `--accent-line` | `#F8C9A9` | Pill borders |
 | `--highlight` | `#FBBF8E` | Marker sweep under headline phrases |
 | `--success` / `--success-soft` | `#166534` / `#DCFCE7` | ✅ after-column, savings badges |
 | `--danger` | `#B91C1C` | ❌ before-column |
+
+`--ink-3` and `--accent` were darkened from their originally chosen `#8A817A` and `#DC4A1E`
+after a Lighthouse pass found 27 WCAG AA contrast failures: white on the original accent was
+4.16, muted text 3.81, and the eyebrow pill 3.55, all against a 4.5 requirement. The shipped
+values were selected by computing ratios across every pairing each token appears in.
 
 Radii `6px` (controls) / `8px` (cards). Container `1140px`.
 Signature treatment: **1.5px `--line-strong` border with a hard offset shadow**
@@ -89,7 +94,8 @@ Signature treatment: **1.5px `--line-strong` border with a hard offset shadow**
 
 ### Typography
 
-Self-hosted via `next/font` — no Google Fonts request, no layout shift.
+Loaded via `next/font/google`, which self-hosts the files at build time — no runtime
+Google Fonts request and no layout shift.
 
 - Arabic: **IBM Plex Sans Arabic** (400/500/600/700)
 - English: **Inter** (400/500/600/700/800)
@@ -109,7 +115,7 @@ Entrance fades and the stat count-up only. All motion gated behind
 
 | Route | Purpose |
 |---|---|
-| `/` | Middleware negotiates locale, redirects to `/ar` or `/en` |
+| `/` | Proxy negotiates locale from Accept-Language, redirects to `/ar` or `/en` |
 | `/ar`, `/en` | The landing page, statically generated |
 | `/ar/thanks`, `/en/thanks` | Post-order confirmation, shows order reference |
 | `/admin` | Password login |
@@ -136,7 +142,7 @@ src/
 │   ├── api/orders/route.ts
 │   └── globals.css              # @theme tokens
 ├── components/
-│   ├── sections/                # 21 section components, one file each
+│   ├── sections/                # section primitives (see §6) + SectionRenderer
 │   ├── ui/                      # Button, Card, Chip, Eyebrow, Accordion, Modal,
 │   │                            # Countdown, StatCounter, VideoCard, Placeholder,
 │   │                            # LocaleSwitcher, StickyMobileCta
@@ -157,7 +163,7 @@ src/
 ├── i18n/
 │   ├── routing.ts
 │   └── request.ts
-├── middleware.ts
+├── proxy.ts                     # Next 16 renamed the middleware convention
 └── messages/{ar,en}.json
 ```
 
