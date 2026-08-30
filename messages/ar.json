@@ -8,5 +8,20 @@
     "currency": "ج.م",
     "localeName": "العربية",
     "switchTo": "English"
+  },
+  "topbar": {
+    "offer": "خصم {percent}% — {now} بدل {was}",
+    "endsIn": "ينتهي خلال",
+    "expired": "انتهى العرض",
+    "instantDelivery": "تسليم فوري",
+    "securePayment": "دفع آمن"
+  },
+  "footer": {
+    "brand": "Digital Assets",
+    "rights": "© {year} Digital Assets. جميع الحقوق محفوظة.",
+    "disclaimer": "تسليم السيستم والشروحات ودعم التشغيل يتم بعد تأكيد الطلب."
+  },
+  "stickyCta": {
+    "label": "ابدأ الآن — {price}"
   }
 }

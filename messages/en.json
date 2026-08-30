@@ -8,5 +8,20 @@
     "currency": "EGP",
     "localeName": "English",
     "switchTo": "العربية"
+  },
+  "topbar": {
+    "offer": "{percent}% off — {now} instead of {was}",
+    "endsIn": "Ends in",
+    "expired": "Offer ended",
+    "instantDelivery": "Instant delivery",
+    "securePayment": "Secure payment"
+  },
+  "footer": {
+    "brand": "Digital Assets",
+    "rights": "© {year} Digital Assets. All rights reserved.",
+    "disclaimer": "System files, walkthroughs, and setup support are delivered after the order is confirmed."
+  },
+  "stickyCta": {
+    "label": "Start now — {price}"
   }
 }
