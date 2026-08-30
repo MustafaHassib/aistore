@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FBF8F3;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F3EEE6;
+
+  --color-ink: #1C1917;
+  --color-ink-2: #57534E;
+  --color-ink-3: #8A817A;
+
+  --color-line: #E4DED4;
+  --color-line-strong: #1C1917;
+
+  --color-accent: #DC4A1E;
+  --color-accent-soft: #FEE9DC;
+  --color-accent-line: #F8C9A9;
+  --color-highlight: #FBBF8E;
+
+  --color-success: #166534;
+  --color-success-soft: #DCFCE7;
+  --color-danger: #B91C1C;
+
+  --radius-control: 6px;
+  --radius-card: 8px;
+
+  --shadow-offset: 3px 3px 0 var(--color-line-strong);
+  --shadow-card: 5px 5px 0 rgba(28, 25, 23, 0.09);
+
+  --container-page: 1140px;
+
+  --font-ar: var(--font-plex-arabic), system-ui, sans-serif;
+  --font-en: var(--font-inter), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-ink-2);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* The marker sweep behind emphasised headline phrases. Painted as a background
+   gradient so it tracks the text in both directions without a positioned box. */
+@utility marker-sweep {
+  position: relative;
+  display: inline;
+  background-image: linear-gradient(
+    var(--color-highlight),
+    var(--color-highlight)
+  );
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.34em;
+  padding-inline: 0.06em;
+}
