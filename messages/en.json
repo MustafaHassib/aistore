@@ -45,6 +45,31 @@
     "trust": "Instant delivery • One-time payment • Lifetime access",
     "coverAsset": "Hero cover image"
   },
+  "beforeAfter": {
+    "eyebrow": "✨ The fix",
+    "heading": "From a page that stalls — to one that runs while you sleep",
+    "sub": "We are not telling you to work harder. We are giving you a system that works alongside you.",
+    "before": {
+      "label": "❌ Today",
+      "items": [
+        "😩 Starting from a blank page every day",
+        "🕐 Hours spent on a single video",
+        "📉 Irregular posting works against the algorithm",
+        "😴 Travelling means posting stops",
+        "💸 Energy burned with nothing to show"
+      ]
+    },
+    "after": {
+      "label": "✅ With the system",
+      "items": [
+        "⚡ It generates, builds, and publishes",
+        "⏱️ 5 videos a day, automatically",
+        "📈 Daily posting works with the algorithm",
+        "😴 Keeps running while you sleep or travel",
+        "💰 Your time goes to growth and revenue"
+      ]
+    }
+  },
   "heroStats": {
     "label": "Key figures",
     "items": [
