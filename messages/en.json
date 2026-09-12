@@ -321,8 +321,7 @@
   "order": {
     "eyebrow": "🧾 Order now",
     "heading": "Get the system and start today",
-    "sub": "Once your payment is confirmed, everything is delivered instantly via Google Drive.",
-    "placeholder": "The order form is being set up."
+    "sub": "Once your payment is confirmed, everything is delivered instantly via Google Drive."
   },
   "finalCta": {
     "heading": "Every day you wait is videos, views, and chances going unused",
@@ -532,10 +531,71 @@
   "heroStats": {
     "label": "Key figures",
     "items": [
-      { "value": 5, "label": "videos published daily" },
-      { "value": 30, "suffix": "+", "label": "distinct scenarios, no repeats" },
-      { "value": 1, "suffix": " hour", "label": "one-time setup" },
-      { "value": 1500, "suffix": "+", "label": "buyers running the system" }
+      {
+        "value": 5,
+        "label": "videos published daily"
+      },
+      {
+        "value": 30,
+        "suffix": "+",
+        "label": "distinct scenarios, no repeats"
+      },
+      {
+        "value": 1,
+        "suffix": " hour",
+        "label": "one-time setup"
+      },
+      {
+        "value": 1500,
+        "suffix": "+",
+        "label": "buyers running the system"
+      }
     ]
+  },
+  "orderForm": {
+    "summaryTitle": "Order summary",
+    "productName": "The full AI automation system",
+    "includes": [
+      "The complete automation system",
+      "Step-by-step setup walkthrough",
+      "10 exclusive bonuses",
+      "Direct technical support",
+      "Instant delivery via Google Drive"
+    ],
+    "name": "Full name",
+    "phone": "Sender phone number",
+    "email": "Email to receive the files",
+    "paymentMethod": "Payment method",
+    "instapay": "💳 InstaPay",
+    "etisalat": "📱 Etisalat Cash",
+    "instapayHint": "Pay via InstaPay, then come back and upload the transfer screenshot.",
+    "instapayOpen": "💳 Open InstaPay now",
+    "etisalatHint": "Transfer to the Etisalat Cash number, then upload the screenshot.",
+    "copy": "📋 Copy",
+    "copied": "Copied",
+    "proof": "Transfer screenshot",
+    "proofCta": "📤 Tap to upload your payment proof",
+    "proofHint": "JPG / PNG / WEBP — 6MB maximum",
+    "proofTooLarge": "That file is larger than 6MB.",
+    "proofWrongType": "Please use a JPG, PNG, or WEBP image.",
+    "submit": "Send the order and get the system",
+    "submitting": "Sending…",
+    "required": "Required",
+    "invalidPhone": "That is not a valid Egyptian mobile number.",
+    "invalidEmail": "That email address is not valid.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorRateLimited": "Too many attempts. Please wait a moment and try again.",
+    "missingPayment": "Payment details still need to be configured here.",
+    "trust": [
+      "🔒 Secure order",
+      "📦 Instant delivery",
+      "🛟 Setup guarantee"
+    ]
+  },
+  "thanks": {
+    "title": "Your order has been received",
+    "referenceLabel": "Order reference",
+    "body": "We will check the transfer and send the system to the email you gave us. Keep this reference.",
+    "back": "Back to the page"
   }
 }
