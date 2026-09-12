@@ -38,7 +38,10 @@ if (!window.IntersectionObserver) {
 // Tests run against a throwaway in-process Postgres and upload directory.
 // Explicitly clearing the production vars stops a stray .env from pointing a
 // test run at real infrastructure.
-process.env.PGLITE_PATH = "./.pglite-test";
+// In-memory, not on disk: Vitest runs files in parallel workers, and pointing
+// them all at one PGlite directory corrupts the relation cache during DDL.
+// Each worker now gets its own database, which is also faster.
+process.env.PGLITE_PATH = "memory://";
 process.env.UPLOAD_DIR = "./.uploads-test";
 delete process.env.DATABASE_URL;
 delete process.env.BLOB_READ_WRITE_TOKEN;

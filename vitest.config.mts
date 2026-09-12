@@ -9,5 +9,9 @@ export default defineConfig({
     setupFiles: ["./vitest.setup.ts"],
     include: ["tests/**/*.test.{ts,tsx}"],
     globals: true,
+    // PGlite boots a WASM Postgres per worker; several booting at once
+    // comfortably exceeds the 5s default before any assertion runs.
+    testTimeout: 30_000,
+    hookTimeout: 30_000,
   },
 });
