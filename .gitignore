@@ -53,3 +53,10 @@ next-env.d.ts
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+.pglite
+.pglite-test
+.pglite-e2e
+.uploads
+.uploads-test
+.uploads-e2e

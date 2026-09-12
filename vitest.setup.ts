@@ -34,3 +34,11 @@ if (!window.IntersectionObserver) {
     }
   } as unknown as typeof window.IntersectionObserver;
 }
+
+// Tests run against a throwaway in-process Postgres and upload directory.
+// Explicitly clearing the production vars stops a stray .env from pointing a
+// test run at real infrastructure.
+process.env.PGLITE_PATH = "./.pglite-test";
+process.env.UPLOAD_DIR = "./.uploads-test";
+delete process.env.DATABASE_URL;
+delete process.env.BLOB_READ_WRITE_TOKEN;
