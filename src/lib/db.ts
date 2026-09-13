@@ -4,7 +4,16 @@ import * as schema from "./schema";
 
 type Database = ReturnType<typeof drizzlePglite<typeof schema>>;
 
-let instance: Database | null = null;
+/**
+ * Cached on globalThis, not in a module variable. Next bundles route handlers
+ * and server actions into separate chunks, so a module-level cache is created
+ * once per chunk — which meant two PGlite instances opening the same directory
+ * and corrupting it. Harmless for Neon, which is a stateless HTTP driver.
+ */
+const globalForDb = globalThis as typeof globalThis & {
+  __db?: Database;
+  __dbPromise?: Promise<Database>;
+};
 
 /**
  * Postgres in every environment. PGlite runs the real engine in-process for
@@ -12,22 +21,29 @@ let instance: Database | null = null;
  * queries never diverge between what is tested and what ships.
  */
 export async function getDb(): Promise<Database> {
-  if (instance) return instance;
+  if (globalForDb.__db) return globalForDb.__db;
 
+  // Concurrent callers must await the same connect, not race to create their
+  // own. Without this, parallel requests each boot a database.
+  globalForDb.__dbPromise ??= connect();
+  globalForDb.__db = await globalForDb.__dbPromise;
+  return globalForDb.__db;
+}
+
+async function connect(): Promise<Database> {
   if (process.env.DATABASE_URL) {
     const { drizzle } = await import("drizzle-orm/neon-http");
     const { neon } = await import("@neondatabase/serverless");
-    instance = drizzle(neon(process.env.DATABASE_URL), {
+    return drizzle(neon(process.env.DATABASE_URL), {
       schema,
     }) as unknown as Database;
-    return instance;
   }
 
   const { PGlite } = await import("@electric-sql/pglite");
   const client = new PGlite(process.env.PGLITE_PATH ?? "./.pglite");
-  instance = drizzlePglite(client, { schema });
-  await migrate(instance);
-  return instance;
+  const db = drizzlePglite(client, { schema });
+  await migrate(db);
+  return db;
 }
 
 /**
@@ -76,5 +92,6 @@ async function migrate(db: Database): Promise<void> {
 
 /** Tests only: drops the cached handle so each file gets a fresh database. */
 export function resetDbForTests(): void {
-  instance = null;
+  globalForDb.__db = undefined;
+  globalForDb.__dbPromise = undefined;
 }

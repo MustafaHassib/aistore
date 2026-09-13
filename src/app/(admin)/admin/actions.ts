@@ -23,7 +23,8 @@ export async function login(
 ): Promise<LoginState> {
   // The same limiter the order endpoint uses, so the single shared password
   // cannot be brute-forced.
-  if (!(await checkRateLimit("admin-login", 10, 15 * 60 * 1000))) {
+  const loginLimit = Number(process.env.ADMIN_LOGIN_RATE_LIMIT ?? 10);
+  if (!(await checkRateLimit("admin-login", loginLimit, 15 * 60 * 1000))) {
     return { error: "Too many attempts. Try again later." };
   }
 

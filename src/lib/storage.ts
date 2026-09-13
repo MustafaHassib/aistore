@@ -5,7 +5,10 @@ import { dirname, join, resolve } from "node:path";
 const KEY_PATTERN = /^orders\/[0-9a-f-]{36}\.(jpg|png|webp)$/;
 
 function localRoot(): string {
-  return resolve(process.env.UPLOAD_DIR ?? "./.uploads");
+  // Local disk is the development path only; production sets a Blob token and
+  // never reaches here. The ignore comment stops Turbopack tracing the entire
+  // project into the deployment because the path is env-derived.
+  return resolve(/* turbopackIgnore: true */ process.env.UPLOAD_DIR ?? "./.uploads");
 }
 
 /**

@@ -30,7 +30,11 @@ export default function AdminLogin() {
           />
 
           {state?.error ? (
-            <p role="alert" className="text-xs font-semibold text-danger">
+            <p
+              role="alert"
+              data-testid="login-error"
+              className="text-xs font-semibold text-danger"
+            >
               {state.error}
             </p>
           ) : null}

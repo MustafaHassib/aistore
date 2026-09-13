@@ -11,7 +11,11 @@ export type OrderResult =
   | { ok: true; reference: string }
   | { ok: false; status: number; error: string };
 
-const RATE_LIMIT = 5;
+/**
+ * Configurable so end-to-end runs, which all originate from one address, do
+ * not trip a limit meant for the public internet. Production leaves it unset.
+ */
+const RATE_LIMIT = Number(process.env.ORDER_RATE_LIMIT ?? 5);
 const RATE_WINDOW_MS = 60 * 60 * 1000;
 
 function text(form: FormData, key: string): string | undefined {
