@@ -71,14 +71,11 @@
   }
 }
 
-/* Below-fold sections stay in the DOM and stay indexable, but the browser
-   skips their layout and paint until they approach the viewport. On an
-   18-section page that is the difference between a fast and a slow LCP.
-   The intrinsic size keeps the scrollbar honest while they are skipped. */
-@utility defer-paint {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 600px;
-}
+/* Deliberately NOT using content-visibility on sections. It cuts LCP by
+   ~0.4s, but every call to action on this page is an anchor link to #order,
+   and skipped sections report an estimated height — so the browser scrolls to
+   the wrong offset and the position shifts once they render. Correct anchor
+   navigation is worth more than the LCP gain. */
 
 /* The marker sweep behind emphasised headline phrases. Painted as a background
    gradient so it tracks the text in both directions without a positioned box. */

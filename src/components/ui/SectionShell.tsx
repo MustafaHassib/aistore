@@ -25,7 +25,7 @@ export function SectionShell({
     <section
       id={id}
       aria-labelledby={headingId}
-      className={`defer-paint ${band === "alt" ? "bg-surface-2" : "bg-bg"}`}
+      className={band === "alt" ? "bg-surface-2" : "bg-bg"}
     >
       <div className="mx-auto max-w-page px-5 py-16 md:py-24">
         <header className="mb-10 max-w-3xl">
